@@ -1,0 +1,58 @@
+{
+  "name": "ecomrush-reviews",
+  "version": "1.0.0",
+  "engines": {
+    "yarn": "1.3.2",
+    "node": "9.10.1"
+  },
+  "main": "index.js",
+  "scripts": {
+    "server": "node index.js",
+    "client": "node scripts/start-client.js",
+    "start": "concurrently \"nodemon index.js\" \"yarn run client\"",
+    "heroku-prebuild": "cd client && yarn install && yarn run build",
+    "build": "node scripts/build.js",
+    "seed": "node scripts/seedDB.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "installDeps": "yarn && cd client && yarn"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/garrettbear/ecomrush-home.git"
+  },
+  "author": "James McMillan <jmcmillan29@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@sendgrid/mail": "^6.2.1",
+    "async": "^2.6.0",
+    "bcryptjs": "^2.4.3",
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.2",
+    "concurrently": "^3.5.1",
+    "cookie-session": "^2.0.0-beta.3",
+    "cors": "^2.8.4",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "mongoose": "^5.0.12",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.17.2",
+    "npm": "^5.8.0",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "sendgrid": "^5.2.3",
+    "twilio": "^3.14.0",
+    "validator": "^9.4.1"
+  },
+  "devDependencies": {
+    "bluebird": "^3.5.1",
+    "chai": "^4.1.2",
+    "lodash": "^4.16.6",
+    "mocha": "^5.0.5",
+    "supertest": "^3.0.0",
+    "supertest-promised": "^1.0.0",
+    "xmldom": "^0.1.22",
+    "xpath": "0.0.23"
+  }
+}

@@ -1,0 +1,44 @@
+
+/* Sizing for the chat content box */
+.rsc-container {
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    height: 576px;
+}
+
+/* Hide the header of the chat */
+.rsc-header {
+    display: none;
+}
+
+/* Set the sizing of the chat scroll and font*/
+.rsc-content {
+    font-family: sans-serif;
+    height: 90%;
+}
+
+/* Styling for the bot bubble*/
+/* .sc-bZQynM {
+    background: #E5E4EA;
+    padding: .5em;
+    margin: .5em;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    color: #000;
+    max-width: 80%;
+    box-shadow: none;
+    border-radius: 18px; 
+} */
+
+/* Styling for reply bubble */
+/* .kFPviT {
+    background: #36E75E;
+    color: #fff;
+    margin-right: 15px;
+} */
+
+/* Hide the avatar images for the chat */
+.rsc-ts-image-container, sc-htoDjs {
+    display: none;
+}

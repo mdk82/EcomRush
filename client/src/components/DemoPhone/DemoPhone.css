@@ -1,0 +1,38 @@
+
+/* DEMO */
+
+.phonewrapper {
+  margin: 0 auto;
+}
+
+.iphone {
+  width:363px;
+  height:727px;
+  background-image:url('../../images/iphonex_deviceframe.png');
+  background-size:100% 100%;
+  margin:0 auto;
+  position:relative;
+}
+
+.border {
+  position: absolute;
+  top: 14.5%;
+  right: 7%;
+  left: 7%;
+  height: 576px;
+  overflow: hidden;
+}
+
+a.article{
+  position:fixed;
+  bottom:15px;left:15px;
+  display:table;
+  text-decoration:none;
+  color:white;
+  background-color:#00e34d;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font: 400 15px 'Open Sans', sans-serif;
+}
+
+

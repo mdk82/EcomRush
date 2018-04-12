@@ -1,0 +1,129 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+  
+  .b-chat {
+    width: 85%;
+    margin: 0 5%;
+    padding: 1em 1em;
+    height: 100%;
+  }
+  .b-chat__container {
+    max-width: 500px;
+    margin: auto;
+    height: 100%;
+  }
+  
+  #chat, .c-chat {
+    height: 100%;
+  }
+  
+  .c-chat {
+    width: 100%;
+    margin: 1.5em 0;
+    position: relative;
+    height: 100%;
+    font-size: 1.2em;
+    line-height: 1.2em;
+  }
+  .c-chat__list {
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    overflow-x: visible;
+    height: 90%;
+  }
+  .c-chat__list::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+  .c-chat__list .c-chat__item {
+    text-align: left;
+    margin-bottom: 1em;
+  }
+  .c-chat__list .c-chat__item--human {
+    text-align: right;
+  }
+  .c-chat__list .c-chat__item--human .c-chat__message {
+    background: #36E75E;
+    color: #fff;
+    /* border-top-right-radius: 0; */
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 20px 0px\9;
+  }
+  .c-chat__list .c-chat__message {
+    font-family: sans-serif;
+    display: inline-block;
+    background: #E5E4EA;
+    color: #000;
+    padding: 0.6em;
+    border-radius: 10px;
+    animation-name: bounceIn;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+  }
+  .c-chat__item--human .c-chat__list .c-chat__message {
+    background: #36E75E;
+    color: #fff;
+    /* border-top-right-radius: 0; */
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 20px 0px\9;
+  }
+  .c-chat__list .c-chat__action {
+    border-bottom: 1px dotted #fff;
+    color: #fff;
+    padding: 0.6em;
+    display: inline-block;
+    animation-name: bounceIn;
+    animation-duration: 0.4s;
+    animation-fill-mode: both;
+    margin-right: 0.8em;
+  }
+  .c-chat__list .c-chat__action:hover {
+    border-bottom: 1px dotted transparent;
+  }
+  .c-chat__form {
+    position: relative;
+    top: .075em;
+    left: 6.7em;
+    right: 10em;
+    width: 69%;
+  }
+  .c-chat__form input {
+    padding: .5em;
+    width: 100%;
+    /* border: .2em solid #E5E4EA; */
+    font-family: sans-serif;
+    font-size: 1.2em;
+    border-radius: 100px;
+    background: none;
+    color: #000;
+    transition: opacity 0.4s;
+  }
+  .c-chat__form input, .c-chat__form input:focus {
+    outline: none;
+    border: none;
+  }
+  .c-chat--ready input {
+    opacity: 1;
+  }
+  
+  @keyframes bounceIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.3);
+    }
+    50% {
+      opacity: 0.9;
+      transform: scale(1.1);
+    }
+    80% {
+      opacity: 1;
+      transform: scale(0.89);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
